@@ -1,0 +1,13 @@
+#pets_section{
+    margin-left: 5em;
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.card{
+
+}
+.card img{
+    max-width: 100px;
+    max-height: 100px;
+}

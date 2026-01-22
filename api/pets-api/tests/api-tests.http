@@ -1,0 +1,14 @@
+### GET request to example server
+GET http://localhost:3000/pets
+
+### Send POST request with json body
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+  "name": "pepe",
+  "desc": "pepe la rana",
+  "img": "juan.png",
+  "type": "perro",
+  "status": "available"
+}
