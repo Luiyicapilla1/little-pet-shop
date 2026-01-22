@@ -3,38 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="public/styles/styles.css">
-    <script defer src="main.js" type="module"></script>
-    <title>Pets</title>
+    <script defer src="login.js" type="module"></script>
+    <title>Login</title>
 </head>
 <body>
-    <main id="pets_section">
-
-    </main>
-    <section id="create_section">
-        <form method="post" action="" id="pet_form">
-            <label for="name">
-                name
-                <input type="text" name="name" id="name">
-            </label>
-            <label for="img">
-                img
-                <input type="text" name="img" id="img">
-            </label>
-            <label for="type">
-                type
-                <input type="text" name="type" id="type">
-            </label>
-            <label for="desc">
-                desc
-                <input type="text" name="desc" id="desc">
-            </label>
-            <label for="status">
-                status
-                <input type="text" name="status" id="status">
-            </label>
-            <input type="submit" value="crear" id="submit_button">
-        </form>
-    </section>
+    <form id="login_form" action="" method="post">
+        <label for="username">
+            <input type="text" name="username" id="username" required>
+        </label>
+        <label for="passw">
+            <input type="text" name="passw" id="passw" required>
+        </label>
+        <input type="submit">
+    </form>
 </body>
 </html>
