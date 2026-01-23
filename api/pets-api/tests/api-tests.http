@@ -10,7 +10,7 @@ Content-Type: application/json
   "desc": "pepe la rana",
   "img": "juan.png",
   "type": "perro",
-  "status": "sold"
+  "status": "available"
 }
 
 ### Send POST request with json body
