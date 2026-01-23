@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pet</title>
+    <script defer src="single-page.js" type="module"></script>
+    <title>single</title>
 </head>
 <body>
+    <main id="single_pet_section">
+
+    </main>
+    <section id="update_pet_section">
+        <form method="post" action="" id="update_pet_form">
+            <label for="name">
+                name
+                <input type="text" name="name" id="name">
+            </label>
+            <label for="desc">
+                desc
+                <input type="text" name="desc" id="desc">
+            </label>
+            <label for="type">
+                type
+                <input type="text" name="type" id="type">
+            </label>
+            <label for="img">
+                img
+                <input type="text" name="img" id="img">
+            </label>
+            <label for="status">
+                status
+                <input type="text" name="status" id="status">
+            </label>
+            <input type="submit" value="update" id="submit_button">
+        </form>
+    </section>
+
+    <button type="button">DELETE PET</button>
 
 </body>
 </html>

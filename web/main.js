@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', async function (){
     DomFacade.renderPetCard(pets_list);
 });
 
-pet_form.addEventListener('submit', async function (e){
-    e.preventDefault();
+pet_form.addEventListener('submit', async function (){
     const namePet = document.getElementById('name').value;
     const img = document.getElementById('img').value;
     const type = document.getElementById('type').value;

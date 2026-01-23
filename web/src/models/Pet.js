@@ -1,6 +1,7 @@
 "use strict";
 export class Pet{
-    constructor(name, desc, img, type, status) {
+    constructor(id, name, desc, img, type, status) {
+        this.id = id;
         this.name = name;
         this.desc = desc;
         this.img = img;

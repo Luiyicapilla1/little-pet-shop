@@ -34,11 +34,35 @@ class DbService{
             await mongo_client.close();
         }
     }
-    getById(id){
+    static async getById(id){
+        const uri = "mongodb://mongoadmin:secret@localhost:27017";
+        const client = new MongoClient(uri);
+        try {
+            await client.connect();
+            const database = client.db("PetDB");
+            const petDB = database.collection("Pet");
 
+            const pet = await petDB.findOne( { '_id': new ObjectId(id) } );
+            return pet;
+        } finally {
+            await client.close();
+        }
     }
-    delete(id){
+    static  async delete(id){
+        const uri = 'mongodb://mongoadmin:secret@localhost:27017';
+        const mongo_client = new MongoClient(uri);
+        try {
+            await mongo_client.connect();
+            const database = mongo_client.db('PetDB');
+            const table = database.collection('Pet');
 
+            const pet_data = await table.deleteOne({ '_id': new ObjectId(id) });
+            return pet_data;
+        }catch (error){
+            console.log(error);
+        }finally {
+            await mongo_client.close();
+        }
     }
     static async put(id, name, desc, img, type, status){
         const uri = 'mongodb://mongoadmin:secret@localhost:27017';

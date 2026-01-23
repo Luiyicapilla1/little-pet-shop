@@ -1,5 +1,5 @@
 ### GET request to example server
-GET http://localhost:3000/users
+GET http://localhost:3000/pets
 
 ### Send POST request with json body
 POST http://localhost:3000/pets
